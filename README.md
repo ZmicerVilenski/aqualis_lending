@@ -1,22 +1,18 @@
 # Aave V3 Deployments
 
-0. .env file configuration:
+0. _.env_ file configuration:
 
-MARKETID="Test"
+   `
+   MARKETID="Test"\
+   MARKET_NAME="Aave"\
+   OWNER=\
+   PRIVATE_KEY=\
+   INFURA_ID=\
+   ETHERSCAN_API_KEY=\
+   MNEMONIC=\
+   DETERMINISTIC_DEPLOYMENT="true"\
 
-MARKET_NAME="Aave"
-
-OWNER=
-
-PRIVATE_KEY=
-
-INFURA_ID=
-
-ETHERSCAN_API_KEY=
-
-MNEMONIC=
-
-DETERMINISTIC_DEPLOYMENT="true"
+   `
 
 1. Install Node.JS dependencies:
 
