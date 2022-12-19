@@ -1,7 +1,7 @@
 import { Signer, ContractFactory, Overrides } from "ethers";
 import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import type { PromiseOrValue } from "../../../../../../common";
-import type { Pool, PoolInterface } from "../../../../../../@aave/core-v3/contracts/protocol/pool/Pool";
+import type { Pool, PoolInterface } from "../../../../../.././core-v3/contracts/protocol/pool/Pool";
 type PoolConstructorParams = [linkLibraryAddresses: PoolLibraryAddresses, signer?: Signer] | ConstructorParameters<typeof ContractFactory>;
 export declare class Pool__factory extends ContractFactory {
     constructor(...args: PoolConstructorParams);
@@ -109,12 +109,12 @@ export declare class Pool__factory extends ContractFactory {
     static connect(address: string, signerOrProvider: Signer | Provider): Pool;
 }
 export interface PoolLibraryAddresses {
-    ["@aave/core-v3/contracts/protocol/libraries/logic/LiquidationLogic.sol:LiquidationLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/SupplyLogic.sol:SupplyLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/EModeLogic.sol:EModeLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/BorrowLogic.sol:BorrowLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/FlashLoanLogic.sol:FlashLoanLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/PoolLogic.sol:PoolLogic"]: string;
-    ["@aave/core-v3/contracts/protocol/libraries/logic/BridgeLogic.sol:BridgeLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/LiquidationLogic.sol:LiquidationLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/SupplyLogic.sol:SupplyLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/EModeLogic.sol:EModeLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/BorrowLogic.sol:BorrowLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/FlashLoanLogic.sol:FlashLoanLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/PoolLogic.sol:PoolLogic"]: string;
+    ["./core-v3/contracts/protocol/libraries/logic/BridgeLogic.sol:BridgeLogic"]: string;
 }
 export {};
