@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MULTISIG_ADDRESS = exports.GOVERNANCE_BRIDGE_EXECUTOR = exports.DEFAULT_NAMED_ACCOUNTS = exports.EMPTY_STORAGE_SLOT = exports.chainlinkEthUsdAggregatorProxy = exports.chainlinkAggregatorProxy = exports.MOCK_CHAINLINK_AGGREGATORS_PRICES = exports.ZERO_BYTES_32 = exports.WRAPPED_NATIVE_TOKEN_PER_NETWORK = exports.AAVE_REFERRAL = exports.ONE_ADDRESS = exports.ZERO_ADDRESS = exports.MAX_UINT_AMOUNT = exports.oneRay = exports.oneEther = exports.HALF_PERCENTAGE = exports.PERCENTAGE_FACTOR = exports.V3_PERIPHERY_VERSION = exports.V3_CORE_VERSION = void 0;
+exports.MULTISIG_ADDRESS = exports.GOVERNANCE_BRIDGE_EXECUTOR = exports.DEFAULT_NAMED_ACCOUNTS = exports.EMPTY_STORAGE_SLOT = exports.chainlinkEthUsdAggregatorProxy = exports.chainlinkAggregatorProxy = exports.MOCK_CHAINLINK_AGGREGATORS_PRICES = exports.ZERO_BYTES_32 = exports.WRAPPED_NATIVE_TOKEN_PER_NETWORK = exports.AQUA_REFERRAL = exports.ONE_ADDRESS = exports.ZERO_ADDRESS = exports.MAX_UINT_AMOUNT = exports.oneRay = exports.oneEther = exports.HALF_PERCENTAGE = exports.PERCENTAGE_FACTOR = exports.V3_PERIPHERY_VERSION = exports.V3_CORE_VERSION = void 0;
 const utils_1 = require("ethers/lib/utils");
 const types_1 = require("./types");
-// const { version: coreVersion, } = require("@aave/core-v3/package.json");
-// const { version: peripheryVersion, } = require("@aave/periphery-v3/package.json");
 exports.V3_CORE_VERSION = '3.0.0';
 exports.V3_PERIPHERY_VERSION = '3.0.0';
 exports.PERCENTAGE_FACTOR = "10000";
@@ -14,7 +12,7 @@ exports.oneRay = (0, utils_1.parseUnits)("1", 27);
 exports.MAX_UINT_AMOUNT = "115792089237316195423570985008687907853269984665640564039457584007913129639935";
 exports.ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
 exports.ONE_ADDRESS = "0x0000000000000000000000000000000000000001";
-exports.AAVE_REFERRAL = "0";
+exports.AQUA_REFERRAL = "0";
 exports.WRAPPED_NATIVE_TOKEN_PER_NETWORK = {
     [types_1.eEthereumNetwork.kovan]: exports.ZERO_ADDRESS,
     [types_1.eEthereumNetwork.main]: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",

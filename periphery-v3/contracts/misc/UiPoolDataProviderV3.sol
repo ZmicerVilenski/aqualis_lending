@@ -4,12 +4,12 @@ pragma solidity ^0.8.10;
 import {IERC20Detailed} from "../../../core-v3/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol";
 import {IPoolAddressesProvider} from "../../../core-v3/contracts/interfaces/IPoolAddressesProvider.sol";
 import {IPool} from "../../../core-v3/contracts/interfaces/IPool.sol";
-import {IAaveOracle} from "../../../core-v3/contracts/interfaces/IAaveOracle.sol";
+import {IAqualisOracle} from "../../../core-v3/contracts/interfaces/IAqualisOracle.sol";
 import {IAToken} from "../../../core-v3/contracts/interfaces/IAToken.sol";
 import {IVariableDebtToken} from "../../../core-v3/contracts/interfaces/IVariableDebtToken.sol";
 import {IStableDebtToken} from "../../../core-v3/contracts/interfaces/IStableDebtToken.sol";
 import {DefaultReserveInterestRateStrategy} from "../../../core-v3/contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol";
-import {AaveProtocolDataProvider} from "../../../core-v3/contracts/misc/AaveProtocolDataProvider.sol";
+import {AqualisProtocolDataProvider} from "../../../core-v3/contracts/misc/AqualisProtocolDataProvider.sol";
 import {WadRayMath} from "../../../core-v3/contracts/protocol/libraries/math/WadRayMath.sol";
 import {ReserveConfiguration} from "../../../core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol";
 import {UserConfiguration} from "../../../core-v3/contracts/protocol/libraries/configuration/UserConfiguration.sol";
@@ -77,9 +77,9 @@ contract UiPoolDataProviderV3 is IUiPoolDataProviderV3 {
         override
         returns (AggregatedReserveData[] memory, BaseCurrencyInfo memory)
     {
-        IAaveOracle oracle = IAaveOracle(provider.getPriceOracle());
+        IAqualisOracle oracle = IAqualisOracle(provider.getPriceOracle());
         IPool pool = IPool(provider.getPool());
-        AaveProtocolDataProvider poolDataProvider = AaveProtocolDataProvider(
+        AqualisProtocolDataProvider poolDataProvider = AqualisProtocolDataProvider(
             provider.getPoolDataProvider()
         );
 

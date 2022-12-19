@@ -66,7 +66,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     return true;
 };
 // This script can only be run successfully once per market, core version, and network
-func.id = `PoolInitalization:${env_2.MARKET_NAME}:aave-v3-core@${constants_2.V3_CORE_VERSION}`;
+func.id = `PoolInitalization:${env_2.MARKET_NAME}:aqualis-v3-core@${constants_2.V3_CORE_VERSION}`;
 func.tags = ["market", "init-pool"];
 func.dependencies = ["before-deploy", "core", "periphery-pre", "provider"];
 func.skip = async () => (0, market_config_helpers_2.checkRequiredEnvironment)();

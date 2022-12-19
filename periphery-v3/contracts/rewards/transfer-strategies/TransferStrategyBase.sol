@@ -7,7 +7,7 @@ import {IERC20} from "../../../../core-v3/contracts/dependencies/openzeppelin/co
 
 /**
  * @title TransferStrategyStorage
- * @author Aave
+ * @author Aqualis
  **/
 abstract contract TransferStrategyBase is ITransferStrategyBase {
     using GPv2SafeERC20 for IERC20;

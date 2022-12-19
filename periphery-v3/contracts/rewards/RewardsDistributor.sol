@@ -10,7 +10,7 @@ import {RewardsDataTypes} from "./libraries/RewardsDataTypes.sol";
 /**
  * @title RewardsDistributor
  * @notice Accounting contract to manage multiple staking distributions with multiple rewards
- * @author Aave
+ * @author Aqualis
  **/
 abstract contract RewardsDistributor is IRewardsDistributor {
     using SafeCast for uint256;

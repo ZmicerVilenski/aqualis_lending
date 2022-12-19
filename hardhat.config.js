@@ -36,10 +36,6 @@ exports.default = {
             },
         ],
     },
-    typechain: {
-        outDir: "typechain",
-        target: "ethers-v5",
-    },
     networks: {
         hardhat: hardhat_config_helpers_1.hardhatNetworkSettings,
         localhost: {
@@ -76,7 +72,7 @@ exports.default = {
         paths: [
             "core-v3/contracts/protocol/configuration/PoolAddressesProviderRegistry.sol",
             "core-v3/contracts/protocol/configuration/PoolAddressesProvider.sol",
-            "core-v3/contracts/misc/AaveOracle.sol",
+            "core-v3/contracts/misc/AqualisOracle.sol",
             "core-v3/contracts/protocol/tokenization/AToken.sol",
             "core-v3/contracts/protocol/tokenization/DelegationAwareAToken.sol",
             "core-v3/contracts/protocol/tokenization/StableDebtToken.sol",
@@ -94,10 +90,10 @@ exports.default = {
             "core-v3/contracts/protocol/pool/L2Pool.sol",
             "core-v3/contracts/protocol/pool/PoolConfigurator.sol",
             "core-v3/contracts/protocol/pool/DefaultReserveInterestRateStrategy.sol",
-            "core-v3/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+            "core-v3/contracts/protocol/libraries/aqualis-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
             "core-v3/contracts/dependencies/openzeppelin/upgradeability/InitializableAdminUpgradeabilityProxy.sol",
             "core-v3/contracts/deployments/ReservesSetupHelper.sol",
-            "core-v3/contracts/misc/AaveProtocolDataProvider.sol",
+            "core-v3/contracts/misc/AqualisProtocolDataProvider.sol",
             "core-v3/contracts/misc/L2Encoder.sol",
             "core-v3/contracts/protocol/configuration/ACLManager.sol",
             "core-v3/contracts/dependencies/weth/WETH9.sol",
@@ -127,8 +123,8 @@ exports.default = {
             "periphery-v3/contracts/rewards/EmissionManager.sol",
             "periphery-v3/contracts/treasury/Collector.sol",
             "periphery-v3/contracts/treasury/CollectorController.sol",
-            "periphery-v3/contracts/treasury/AaveEcosystemReserveV2.sol",
-            "periphery-v3/contracts/treasury/AaveEcosystemReserveController.sol",
+            "periphery-v3/contracts/treasury/AqualisEcosystemReserveV2.sol",
+            "periphery-v3/contracts/treasury/AqualisEcosystemReserveController.sol",
             "periphery-v3/contracts/adapters/paraswap/ParaSwapLiquiditySwapAdapter.sol",
             "periphery-v3/contracts/adapters/paraswap/ParaSwapRepayAdapter.sol",
             "@aave/safety-module/contracts/stake/StakedAave.sol",

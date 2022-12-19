@@ -1,10 +1,10 @@
-# Aave V3 Deployments
+# Aqualis V3 Deployments
 
 0. _.env_ file configuration:
 
    `
    MARKETID="Test"\
-   MARKET_NAME="Aave"\
+   MARKET_NAME="Aqualis"\
    OWNER=\
    PRIVATE_KEY=\
    INFURA_ID=\
@@ -42,6 +42,6 @@
 | ├─ 02-market/         | Market deployment scripts, depends of Core and Periphery deployment.                                                            |
 | ├─ 03-periphery_post/ | Periphery contracts deployment after market is deployed.                                                                        |
 | deployments/          | Artifacts location of the deployments, contains the addresses, the abi, solidity input metadata and the constructor parameters. |
-| markets/              | Directory to configure Aave markets                                                                                             |
+| markets/              | Directory to configure Aqualis markets                                                                                          |
 | tasks/                | Hardhat tasks to setup and review market configs                                                                                |
 | helpers/              | Utility helpers to manage configs and deployments                                                                               |

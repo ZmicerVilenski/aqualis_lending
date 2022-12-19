@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deployEmissionManager = exports.deployL2Encoder = exports.deployL2Mock2Pool = exports.deployL2DeployerImplementation = exports.deployCalldataLogicLibrary = exports.deployInitializableAdminUpgradeabilityProxy = exports.setupStkAave = exports.deployStakedAaveV1 = exports.deployStakedAaveV2 = exports.deployStakedAaveV3 = exports.deployWrappedTokenGateway = exports.deployMockReentrantInitializableImple = exports.deployMockInitializableFromConstructorImple = exports.deployMockInitializableImpleV2 = exports.deployMockInitializableImple = exports.deployMockPool = exports.deployMockReserveConfiguration = exports.deployMockIncentivesController = exports.deployMockAToken = exports.deployMockVariableDebtToken = exports.deployWETHMocked = exports.deployMockStableDebtToken = exports.deployInitializableImmutableAdminUpgradeabilityProxy = exports.deployReservesSetupHelper = exports.deployDelegationAwareATokenImpl = exports.deployDelegationAwareAToken = exports.deployGenericATokenImpl = exports.deployGenericAToken = exports.deployGenericVariableDebtToken = exports.deployGenericStableDebtToken = exports.deployDefaultReserveInterestRateStrategy = exports.deployMintableDelegationERC20 = exports.deployMintableERC20 = exports.deployAaveProtocolDataProvider = exports.deployMockFlashLoanReceiver = exports.deployAaveOracle = exports.deployMockAggregator = exports.deployPriceOracle = exports.deployMockPoolInherited = exports.deployPool = exports.deployPoolConfigurator = exports.deployConfiguratorLogicLibrary = exports.deployACLManager = exports.deployPoolAddressesProviderRegistry = exports.deployPoolAddressesProvider = exports.deployUiPoolDataProvider = exports.deployUiIncentiveDataProvider = void 0;
+exports.deployEmissionManager = exports.deployL2Encoder = exports.deployL2Mock2Pool = exports.deployL2DeployerImplementation = exports.deployCalldataLogicLibrary = exports.deployInitializableAdminUpgradeabilityProxy = exports.setupStkAave = exports.deployStakedAaveV1 = exports.deployStakedAaveV2 = exports.deployStakedAaveV3 = exports.deployWrappedTokenGateway = exports.deployMockReentrantInitializableImple = exports.deployMockInitializableFromConstructorImple = exports.deployMockInitializableImpleV2 = exports.deployMockInitializableImple = exports.deployMockPool = exports.deployMockReserveConfiguration = exports.deployMockIncentivesController = exports.deployMockAToken = exports.deployMockVariableDebtToken = exports.deployWETHMocked = exports.deployMockStableDebtToken = exports.deployInitializableImmutableAdminUpgradeabilityProxy = exports.deployReservesSetupHelper = exports.deployDelegationAwareATokenImpl = exports.deployDelegationAwareAToken = exports.deployGenericATokenImpl = exports.deployGenericAToken = exports.deployGenericVariableDebtToken = exports.deployGenericStableDebtToken = exports.deployDefaultReserveInterestRateStrategy = exports.deployMintableDelegationERC20 = exports.deployMintableERC20 = exports.deployAqualisProtocolDataProvider = exports.deployMockFlashLoanReceiver = exports.deployAqualisOracle = exports.deployMockAggregator = exports.deployPriceOracle = exports.deployMockPoolInherited = exports.deployPool = exports.deployPoolConfigurator = exports.deployConfiguratorLogicLibrary = exports.deployACLManager = exports.deployPoolAddressesProviderRegistry = exports.deployPoolAddressesProvider = exports.deployUiPoolDataProvider = exports.deployUiIncentiveDataProvider = void 0;
 const constants_1 = require("./constants");
 const contract_getters_1 = require("./contract-getters");
 const tx_1 = require("./utilities/tx");
@@ -51,16 +51,16 @@ const deployPriceOracle = async () => await (0, tx_1.deployContract)("PriceOracl
 exports.deployPriceOracle = deployPriceOracle;
 const deployMockAggregator = async (price) => await (0, tx_1.deployContract)("MockAggregator", [price]);
 exports.deployMockAggregator = deployMockAggregator;
-const deployAaveOracle = async (args) => (0, tx_1.deployContract)("AaveOracle", args);
-exports.deployAaveOracle = deployAaveOracle;
+const deployAqualisOracle = async (args) => (0, tx_1.deployContract)("AqualisOracle", args);
+exports.deployAqualisOracle = deployAqualisOracle;
 const deployMockFlashLoanReceiver = async (addressesProvider) => (0, tx_1.deployContract)("MockFlashLoanReceiver", [
     addressesProvider,
 ]);
 exports.deployMockFlashLoanReceiver = deployMockFlashLoanReceiver;
-const deployAaveProtocolDataProvider = async (addressesProvider) => (0, tx_1.deployContract)("AaveProtocolDataProvider", [
+const deployAqualisProtocolDataProvider = async (addressesProvider) => (0, tx_1.deployContract)("AqualisProtocolDataProvider", [
     addressesProvider,
 ]);
-exports.deployAaveProtocolDataProvider = deployAaveProtocolDataProvider;
+exports.deployAqualisProtocolDataProvider = deployAqualisProtocolDataProvider;
 const deployMintableERC20 = async (args) => (0, tx_1.deployContract)("MintableERC20", args);
 exports.deployMintableERC20 = deployMintableERC20;
 const deployMintableDelegationERC20 = async (args) => (0, tx_1.deployContract)("MintableDelegationERC20", args);

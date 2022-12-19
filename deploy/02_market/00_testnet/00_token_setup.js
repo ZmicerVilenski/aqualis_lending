@@ -62,12 +62,12 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
                 ...env_1.COMMON_DEPLOY_PARAMS,
             });
         }
-        // 3. Deployment of Stake Aave
+        // 3. Deployment of Stake Aqualis
         const COOLDOWN_SECONDS = "3600";
         const UNSTAKE_WINDOW = "1800";
         const aaveTokenArtifact = await deployments.get(`AAVE${deploy_ids_2.TESTNET_TOKEN_PREFIX}`);
         const stakeProxy = await (0, contract_deployments_1.deployInitializableAdminUpgradeabilityProxy)(deploy_ids_1.STAKE_AAVE_PROXY);
-        // Setup StkAave
+        // Setup StkAqualis
         await (0, contract_deployments_1.setupStkAave)(stakeProxy, [
             aaveTokenArtifact.address,
             aaveTokenArtifact.address,

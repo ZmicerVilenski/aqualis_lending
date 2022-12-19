@@ -75,6 +75,6 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     ));
     return true;
 };
-func.id = `TokenImplementations:${env_2.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `TokenImplementations:${env_2.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "tokens"];
 exports.default = func;

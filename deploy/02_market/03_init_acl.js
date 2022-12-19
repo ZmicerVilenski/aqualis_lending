@@ -45,7 +45,7 @@ const func = async function (hre) {
     return true;
 };
 // This script can only be run successfully once per market, core version, and network
-func.id = `ACLManager:${env_2.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `ACLManager:${env_2.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "acl"];
 func.dependencies = ["before-deploy", "core", "periphery-pre", "provider"];
 func.skip = async () => (0, market_config_helpers_1.checkRequiredEnvironment)();

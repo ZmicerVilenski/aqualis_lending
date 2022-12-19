@@ -6,7 +6,7 @@ import {IERC20} from "../../../../core-v3/contracts/dependencies/openzeppelin/co
 /**
  * @title ICollector
  * @notice Defines the interface of the Collector contract
- * @author Aave
+ * @author Aqualis
  **/
 interface ICollector {
     /**

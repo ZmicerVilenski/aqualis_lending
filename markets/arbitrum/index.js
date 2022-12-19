@@ -5,12 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ArbitrumConfig = void 0;
 const types_1 = require("./../../helpers/types");
-const aave_1 = __importDefault(require("../aave"));
+const aave_1 = __importDefault(require("../aqualis"));
 const helpers_1 = require("../../helpers");
-const reservesConfigs_1 = require("../aave/reservesConfigs");
+const reservesConfigs_1 = require("../aqualis/reservesConfigs");
 exports.ArbitrumConfig = {
     ...aave_1.default,
-    MarketId: "Arbitrum Aave Market",
+    MarketId: "Arbitrum Aqualis Market",
     ATokenNamePrefix: "Arbitrum",
     StableDebtTokenNamePrefix: "Arbitrum",
     VariableDebtTokenNamePrefix: "Arbitrum",

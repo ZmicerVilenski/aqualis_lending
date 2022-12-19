@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.strategySUSHI = exports.strategyCRV = exports.strategyWBTC = exports.strategyAAVE = exports.strategyUSDC = exports.strategyLINK = exports.strategyWFTM = void 0;
-const rateStrategies_1 = require("./../aave/rateStrategies");
+const rateStrategies_1 = require("./../aqualis/rateStrategies");
 const types_1 = require("../../helpers/types");
 exports.strategyWFTM = {
     strategy: rateStrategies_1.rateStrategyVolatileOne,

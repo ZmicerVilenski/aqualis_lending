@@ -10,7 +10,7 @@ import {RewardsDataTypes} from "./libraries/RewardsDataTypes.sol";
 
 /**
  * @title EmissionManager
- * @author Aave
+ * @author Aqualis
  * @notice It manages the list of admins of reward emissions and provides functions to control reward emissions.
  */
 contract EmissionManager is Ownable, IEmissionManager {

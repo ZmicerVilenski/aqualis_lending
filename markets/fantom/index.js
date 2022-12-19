@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FantomMarket = void 0;
 const types_1 = require("../../helpers/types");
-const index_1 = require("../aave/index");
-const reservesConfigs_1 = require("../aave/reservesConfigs");
+const index_1 = require("../aqualis/index");
+const reservesConfigs_1 = require("../aqualis/reservesConfigs");
 const constants_1 = require("../../helpers/constants");
 const reservesConfigs_2 = require("./reservesConfigs");
 // ----------------
@@ -13,7 +13,7 @@ exports.FantomMarket = {
     ...index_1.AaveMarket,
     ProviderId: 33,
     WrappedNativeTokenSymbol: "WFTM",
-    MarketId: "Fantom Aave Market",
+    MarketId: "Fantom Aqualis Market",
     ATokenNamePrefix: "Fantom",
     StableDebtTokenNamePrefix: "Fantom",
     VariableDebtTokenNamePrefix: "Fantom",

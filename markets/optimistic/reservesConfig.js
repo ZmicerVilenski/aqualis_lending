@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.strategySUSD = void 0;
-const rateStrategies_1 = require("./../aave/rateStrategies");
+const rateStrategies_1 = require("./../aqualis/rateStrategies");
 const types_1 = require("../../helpers/types");
 exports.strategySUSD = {
     strategy: rateStrategies_1.rateStrategyStableOne,

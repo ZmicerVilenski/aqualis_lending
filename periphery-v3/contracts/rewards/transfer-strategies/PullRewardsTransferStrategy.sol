@@ -11,7 +11,7 @@ import {IERC20} from "../../../../core-v3/contracts/dependencies/openzeppelin/co
  * @title PullRewardsTransferStrategy
  * @notice Transfer strategy that pulls ERC20 rewards from an external account to the user address.
  * The external account could be a smart contract or EOA that must approve to the PullRewardsTransferStrategy contract address.
- * @author Aave
+ * @author Aqualis
  **/
 contract PullRewardsTransferStrategy is
     TransferStrategyBase,

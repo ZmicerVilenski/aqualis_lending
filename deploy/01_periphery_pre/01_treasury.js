@@ -21,14 +21,14 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     // Deploy Treasury Controller
     const treasuryController = await deploy(deploy_ids_1.TREASURY_CONTROLLER_ID, {
         from: deployer,
-        contract: "AaveEcosystemReserveController",
+        contract: "AqualisEcosystemReserveController",
         args: [treasuryProxyAdmin],
         ...env_1.COMMON_DEPLOY_PARAMS,
     });
     // Deploy Treasury implementation and initialize proxy
     const treasuryImplArtifact = await deploy(deploy_ids_1.TREASURY_IMPL_ID, {
         from: deployer,
-        contract: "AaveEcosystemReserveV2",
+        contract: "AqualisEcosystemReserveV2",
         args: [],
         ...env_1.COMMON_DEPLOY_PARAMS,
     });

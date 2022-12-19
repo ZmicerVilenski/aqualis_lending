@@ -20,7 +20,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     const reserveAssets = await (0, market_config_helpers_2.getReserveAddresses)(poolConfig, network);
     const chainlinkAggregators = await (0, market_config_helpers_1.getChainlinkOracles)(poolConfig, network);
     const [assets, sources] = (0, init_helpers_1.getPairsTokenAggregator)(reserveAssets, chainlinkAggregators);
-    // Deploy AaveOracle
+    // Deploy AqualisOracle
     await deploy(deploy_ids_1.ORACLE_ID, {
         from: deployer,
         args: [
@@ -32,7 +32,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
             (0, utils_1.parseUnits)("1", OracleQuoteUnit),
         ],
         ...env_1.COMMON_DEPLOY_PARAMS,
-        contract: "AaveOracle",
+        contract: "AqualisOracle",
     });
     // Deploy FallbackOracle
     await deploy(deploy_ids_1.FALLBACK_ORACLE_ID, {
@@ -43,7 +43,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     });
     return true;
 };
-func.id = `Oracles:${env_2.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `Oracles:${env_2.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "oracle"];
 func.dependencies = ["before-deploy"];
 func.skip = async () => (0, market_config_helpers_2.checkRequiredEnvironment)();

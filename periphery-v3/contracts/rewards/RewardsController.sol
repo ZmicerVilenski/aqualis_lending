@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.10;
 
-import {VersionedInitializable} from "../../../core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol";
+import {VersionedInitializable} from "../../../core-v3/contracts/protocol/libraries/aqualis-upgradeability/VersionedInitializable.sol";
 import {SafeCast} from "../../../core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol";
 import {IScaledBalanceToken} from "../../../core-v3/contracts/interfaces/IScaledBalanceToken.sol";
 import {RewardsDistributor} from "./RewardsDistributor.sol";
@@ -13,7 +13,7 @@ import {IEACAggregatorProxy} from "../misc/interfaces/IEACAggregatorProxy.sol";
 /**
  * @title RewardsController
  * @notice Abstract contract template to build Distributors contracts for ERC20 rewards to protocol participants
- * @author Aave
+ * @author Aqualis
  **/
 contract RewardsController is
     RewardsDistributor,
@@ -35,7 +35,7 @@ contract RewardsController is
 
     // This mapping contains the price oracle per reward.
     // A price oracle is enforced for integrators to be able to show incentives at
-    // the current Aave UI without the need to setup an external price registry
+    // the current Aqualis UI without the need to setup an external price registry
     // At the moment of reward configuration, the Incentives Controller performs
     // a check to see if the provided reward oracle contains `latestAnswer`.
     mapping(address => IEACAggregatorProxy) internal _rewardOracle;

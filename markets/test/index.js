@@ -10,7 +10,7 @@ const reservesConfigs_1 = require("./reservesConfigs");
 // ----------------
 exports.AaveMarket = {
     ...commons_1.CommonsConfig,
-    MarketId: "Testnet Aave Market",
+    MarketId: "Testnet Aqualis Market",
     ProviderId: 8080,
     ReservesConfig: {
         AAVE: reservesConfigs_1.strategyAAVE,

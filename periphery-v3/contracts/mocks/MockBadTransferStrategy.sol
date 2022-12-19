@@ -9,7 +9,7 @@ import {IERC20} from "../../../core-v3/contracts/dependencies/openzeppelin/contr
 /**
  * @title MockBadTransferStrategy
  * @notice Transfer strategy that always return false at performTransfer and does noop.
- * @author Aave
+ * @author Aqualis
  **/
 contract MockBadTransferStrategy is TransferStrategyBase {
     using GPv2SafeERC20 for IERC20;

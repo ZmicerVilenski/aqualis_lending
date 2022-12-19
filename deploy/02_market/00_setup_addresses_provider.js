@@ -48,10 +48,10 @@ const func = async function (hre) {
     await (0, tx_1.waitForTx)(await addressesProviderInstance.setMarketId(poolConfig.MarketId));
     // 3. Add AddressesProvider to Registry
     await (0, init_helpers_1.addMarketToRegistry)(poolConfig.ProviderId, addressesProviderArtifact.address);
-    // 4. Deploy AaveProtocolDataProvider getters contract
+    // 4. Deploy AqualisProtocolDataProvider getters contract
     const protocolDataProvider = await deploy(deploy_ids_1.POOL_DATA_PROVIDER, {
         from: deployer,
-        contract: "AaveProtocolDataProvider",
+        contract: "AqualisProtocolDataProvider",
         args: [addressesProviderArtifact.address],
         ...env_1.COMMON_DEPLOY_PARAMS,
     });
@@ -63,7 +63,7 @@ const func = async function (hre) {
     return true;
 };
 // This script can only be run successfully once per market, core version, and network
-func.id = `PoolAddressesProvider:${env_1.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `PoolAddressesProvider:${env_1.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "provider"];
 func.dependencies = ["before-deploy", "core", "periphery-pre", "token-setup"];
 func.skip = async () => (0, market_config_helpers_1.checkRequiredEnvironment)();

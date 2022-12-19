@@ -28,8 +28,8 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     }
     // Iterate each token symbol and deploy a mock aggregator
     await bluebird_1.default.each(symbols, async (symbol) => {
-        const price = symbol === "StkAave"
-            ? constants_1.MOCK_CHAINLINK_AGGREGATORS_PRICES["AAVE"]
+        const price = symbol === "StkAqualis"
+            ? constants_1.MOCK_CHAINLINK_AGGREGATORS_PRICES["AQUA"]
             : constants_1.MOCK_CHAINLINK_AGGREGATORS_PRICES[symbol];
         if (!price) {
             throw `[ERROR] Missing mock price for asset ${symbol} at MOCK_CHAINLINK_AGGREGATORS_PRICES constant located at src/constants.ts`;
@@ -44,7 +44,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     return true;
 };
 // This script can only be run successfully once per market, core version, and network
-func.id = `MockPriceAggregators:${env_2.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `MockPriceAggregators:${env_2.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "init-testnet", "price-aggregators-setup"];
 func.dependencies = ["before-deploy", "tokens-setup", "periphery-pre"];
 func.skip = async () => (0, market_config_helpers_2.checkRequiredEnvironment)();

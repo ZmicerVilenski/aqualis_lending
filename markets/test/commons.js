@@ -7,7 +7,7 @@ const types_1 = require("../../helpers/types");
 // PROTOCOL GLOBAL PARAMS
 // ----------------
 exports.CommonsConfig = {
-    MarketId: "Testnet Aave Market",
+    MarketId: "Testnet Aqualis Market",
     ATokenNamePrefix: "Testnet",
     StableDebtTokenNamePrefix: "Testnet",
     VariableDebtTokenNamePrefix: "Testnet",

@@ -72,28 +72,28 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
             ],
             ...env_1.COMMON_DEPLOY_PARAMS,
         });
-        const stakedAaveAddress = isLive
+        const stakedAqualisAddress = isLive
             ? (0, market_config_helpers_1.getParamPerNetwork)(poolConfig.StkAaveProxy, network)
             : (await deployments.getOrNull(deploy_ids_1.STAKE_AAVE_PROXY))?.address;
-        if (stakedAaveAddress) {
+        if (stakedAqualisAddress) {
             await deploy(deploy_ids_1.INCENTIVES_STAKED_TOKEN_STRATEGY_ID, {
                 from: deployer,
                 contract: "StakedTokenTransferStrategy",
                 args: [
                     rewardsProxyAddress,
                     incentivesEmissionManager,
-                    stakedAaveAddress,
+                    stakedAqualisAddress,
                 ],
                 ...env_1.COMMON_DEPLOY_PARAMS,
             });
         }
         else {
-            console.log("[WARNING] Missing StkAave address. Skipping StakedTokenTransferStrategy deployment.");
+            console.log("[WARNING] Missing StkAqualis address. Skipping StakedTokenTransferStrategy deployment.");
         }
     }
     return true;
 };
-func.id = `Incentives:${env_2.MARKET_NAME}:aave-v3-periphery@${constants_2.V3_PERIPHERY_VERSION}`;
+func.id = `Incentives:${env_2.MARKET_NAME}:aqualis-v3-periphery@${constants_2.V3_PERIPHERY_VERSION}`;
 func.tags = ["market", "IncentivesProxy"];
 func.dependencies = [];
 exports.default = func;

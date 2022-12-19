@@ -1,5 +1,5 @@
 {
-    "name": "@aave/deploy-v3",
+    "name": "@aqualis/deploy-v3",
     "version": "1.51.0",
     "files": [
       "dist",
@@ -11,15 +11,9 @@
     "engines": {
       "node": ">=16.0.0"
     },
-    "types": "dist/types/helpers/index.d.ts",
-    "author": "Aave",
-    "contributors": [
-      "David Racero <david.k@aave.com>",
-      "Miguel Martinez <miguel@aave.com>",
-      "Steven Valeri <steven@aave.com>",
-      "Emilio Frangella <emilio@aave.com>"
-    ],
-    "main": "dist/helpers/index.js",
+    "author": "Aqualis",
+    "contributors": [],
+    "main": "helpers/index.js",
     "devDependencies": {
       "@aave/aave-token": "^1.0.4",
       "@aave/safety-module": "^1.0.3",
@@ -48,16 +42,13 @@
       "tslint-plugin-prettier": "^2.3.0",
       "typescript": "^4.3.2"
     },
-    "license": "AGPLv3",
+    "license": "MIT",
     "peerDependencies": {
       "hardhat": "^2.6.1"
     },
-    "publishConfig": {
-      "registry": " https://registry.npmjs.org"
-    },
     "repository": {
       "type": "git",
-      "url": "git://github.com/aave/aave-v3-deploy"
+      "url": "git://github.com/ZmicerVilenski/aqualis_lending"
     },
     "dependencies": {
       "defender-relay-client": "^1.11.1"

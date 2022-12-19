@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.HarmonyMarket = void 0;
 const types_1 = require("../../helpers/types");
-const index_1 = require("../aave/index");
+const index_1 = require("../aqualis/index");
 const reservesConfig_1 = require("./reservesConfig");
 const constants_1 = require("../../helpers/constants");
 // ----------------
@@ -12,7 +12,7 @@ exports.HarmonyMarket = {
     ...index_1.AaveMarket,
     ProviderId: 31,
     WrappedNativeTokenSymbol: "WONE",
-    MarketId: "Harmony Aave Market",
+    MarketId: "Harmony Aqualis Market",
     ATokenNamePrefix: "Harmony",
     StableDebtTokenNamePrefix: "Harmony",
     VariableDebtTokenNamePrefix: "Harmony",

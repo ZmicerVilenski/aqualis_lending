@@ -5,14 +5,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.OptimisticConfig = void 0;
 const types_1 = require("./../../helpers/types");
-const aave_1 = __importDefault(require("../aave"));
-const reservesConfigs_1 = require("../aave/reservesConfigs");
+const aave_1 = __importDefault(require("../aqualis"));
+const reservesConfigs_1 = require("../aqualis/reservesConfigs");
 const helpers_1 = require("../../helpers");
 const reservesConfig_1 = require("./reservesConfig");
 exports.OptimisticConfig = {
     ...aave_1.default,
     ProviderId: 35,
-    MarketId: "Optimism Aave Market",
+    MarketId: "Optimism Aqualis Market",
     ATokenNamePrefix: "Optimism",
     StableDebtTokenNamePrefix: "Optimism",
     VariableDebtTokenNamePrefix: "Optimism",

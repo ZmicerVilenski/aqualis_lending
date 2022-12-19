@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AvalancheMarket = void 0;
 const types_1 = require("./../../helpers/types");
-const index_1 = require("../aave/index");
+const index_1 = require("../aqualis/index");
 const constants_1 = require("../../helpers/constants");
-const reservesConfigs_1 = require("../aave/reservesConfigs");
+const reservesConfigs_1 = require("../aqualis/reservesConfigs");
 const reservesConfigs_2 = require("./reservesConfigs");
 // ----------------
 // POOL--SPECIFIC PARAMS
@@ -13,7 +13,7 @@ exports.AvalancheMarket = {
     ...index_1.AaveMarket,
     ProviderId: 32,
     WrappedNativeTokenSymbol: "WAVAX",
-    MarketId: "Avalanche Aave Market",
+    MarketId: "Avalanche Aqualis Market",
     ATokenNamePrefix: "Avalanche",
     StableDebtTokenNamePrefix: "Avalanche",
     VariableDebtTokenNamePrefix: "Avalanche",

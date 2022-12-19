@@ -15,7 +15,7 @@ import {ReentrancyGuard} from "../../dependencies/openzeppelin/ReentrancyGuard.s
 /**
  * @title ParaSwapRepayAdapter
  * @notice ParaSwap Adapter to perform a repay of a debt with collateral.
- * @author Aave
+ * @author Aqualis
  **/
 contract ParaSwapRepayAdapter is BaseParaSwapBuyAdapter, ReentrancyGuard {
     using SafeMath for uint256;

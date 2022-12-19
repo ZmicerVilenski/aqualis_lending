@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.10;
 
-import {VersionedInitializable} from "../../../core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol";
+import {VersionedInitializable} from "../../../core-v3/contracts/protocol/libraries/aqualis-upgradeability/VersionedInitializable.sol";
 import {IERC20} from "../../../core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
 import {ICollector} from "./interfaces/ICollector.sol";
 
@@ -10,7 +10,7 @@ import {ICollector} from "./interfaces/ICollector.sol";
  * @notice Stores the fees collected by the protocol and allows the fund administrator
  *         to approve or transfer the collected ERC20 tokens.
  * @dev Implementation contract that must be initialized using transparent proxy pattern.
- * @author Aave
+ * @author Aqualis
  **/
 contract Collector is VersionedInitializable, ICollector {
     // Store the current funds administrator address

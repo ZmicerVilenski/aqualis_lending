@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getEmissionManager = exports.getL2Encoder = exports.getStakeAave = exports.getStakedRewardsStrategy = exports.getPullRewardsStrategy = exports.getIncentivesV2 = exports.getWalletBalanceProvider = exports.getUiIncentiveDataProvider = exports.getUiPoolDataProvider = exports.getWrappedTokenGateway = exports.getERC20Faucet = exports.getTestnetReserveAddressFromSymbol = exports.getPoolLibraries = exports.getMockInitializableImpleV2 = exports.getMockInitializableImple = exports.getMockL2Pool = exports.getMockPool = exports.getMockStableDebtToken = exports.getMockVariableDebtToken = exports.getWETHMocked = exports.getReservesSetupHelper = exports.getPoolAddressesProviderRegistry = exports.getMockFlashLoanReceiver = exports.getFallbackOracle = exports.getAaveOracle = exports.getAaveProtocolDataProvider = exports.getIErc20Detailed = exports.getMintableERC20 = exports.getIRStrategy = exports.getPriceOracle = exports.getPool = exports.getFlashLoanLogic = exports.getEModeLogic = exports.getLiquidationLogic = exports.getBorrowLogic = exports.getBridgeLogic = exports.getSupplyLogic = exports.getPoolConfiguratorProxy = exports.getACLManager = exports.getPoolAddressesProvider = exports.getWETH = exports.getERC20 = exports.getStableDebtToken = exports.getVariableDebtToken = exports.getAToken = void 0;
+exports.getEmissionManager = exports.getL2Encoder = exports.getStakeAave = exports.getStakedRewardsStrategy = exports.getPullRewardsStrategy = exports.getIncentivesV2 = exports.getWalletBalanceProvider = exports.getUiIncentiveDataProvider = exports.getUiPoolDataProvider = exports.getWrappedTokenGateway = exports.getERC20Faucet = exports.getTestnetReserveAddressFromSymbol = exports.getPoolLibraries = exports.getMockInitializableImpleV2 = exports.getMockInitializableImple = exports.getMockL2Pool = exports.getMockPool = exports.getMockStableDebtToken = exports.getMockVariableDebtToken = exports.getWETHMocked = exports.getReservesSetupHelper = exports.getPoolAddressesProviderRegistry = exports.getMockFlashLoanReceiver = exports.getFallbackOracle = exports.getAqualisOracle = exports.getAqualisProtocolDataProvider = exports.getIErc20Detailed = exports.getMintableERC20 = exports.getIRStrategy = exports.getPriceOracle = exports.getPool = exports.getFlashLoanLogic = exports.getEModeLogic = exports.getLiquidationLogic = exports.getBorrowLogic = exports.getBridgeLogic = exports.getSupplyLogic = exports.getPoolConfiguratorProxy = exports.getACLManager = exports.getPoolAddressesProvider = exports.getWETH = exports.getERC20 = exports.getStableDebtToken = exports.getVariableDebtToken = exports.getAToken = void 0;
 const deploy_ids_1 = require("./deploy-ids");
 const tx_1 = require("./utilities/tx");
 const _1 = require(".");
@@ -42,10 +42,10 @@ const getMintableERC20 = async (address) => (0, tx_1.getContract)("MintableERC20
 exports.getMintableERC20 = getMintableERC20;
 const getIErc20Detailed = async (address) => (0, tx_1.getContract)("./core-v3/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol:IERC20Detailed", address);
 exports.getIErc20Detailed = getIErc20Detailed;
-const getAaveProtocolDataProvider = async (address) => (0, tx_1.getContract)("AaveProtocolDataProvider", address || (await hre.deployments.get(deploy_ids_1.POOL_DATA_PROVIDER)).address);
-exports.getAaveProtocolDataProvider = getAaveProtocolDataProvider;
-const getAaveOracle = async (address) => (0, tx_1.getContract)("AaveOracle", address || (await hre.deployments.get(deploy_ids_1.ORACLE_ID)).address);
-exports.getAaveOracle = getAaveOracle;
+const getAqualisProtocolDataProvider = async (address) => (0, tx_1.getContract)("AqualisProtocolDataProvider", address || (await hre.deployments.get(deploy_ids_1.POOL_DATA_PROVIDER)).address);
+exports.getAqualisProtocolDataProvider = getAqualisProtocolDataProvider;
+const getAqualisOracle = async (address) => (0, tx_1.getContract)("AqualisOracle", address || (await hre.deployments.get(deploy_ids_1.ORACLE_ID)).address);
+exports.getAqualisOracle = getAqualisOracle;
 const getFallbackOracle = async (address) => (0, tx_1.getContract)("PriceOracle", address || (await hre.deployments.get(deploy_ids_1.FALLBACK_ORACLE_ID)).address);
 exports.getFallbackOracle = getFallbackOracle;
 const getMockFlashLoanReceiver = async (address) => (0, tx_1.getContract)("MockFlashLoanReceiver", address);

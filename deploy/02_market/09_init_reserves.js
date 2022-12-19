@@ -24,7 +24,7 @@ const func = async function ({ getNamedAccounts, deployments, ...hre }) {
     return true;
 };
 // This script can only be run successfully once per market, core version, and network
-func.id = `ReservesInit:${env_1.MARKET_NAME}:aave-v3-core@${constants_1.V3_CORE_VERSION}`;
+func.id = `ReservesInit:${env_1.MARKET_NAME}:aqualis-v3-core@${constants_1.V3_CORE_VERSION}`;
 func.tags = ["market", "init-reserves"];
 func.dependencies = [
     "before-deploy",

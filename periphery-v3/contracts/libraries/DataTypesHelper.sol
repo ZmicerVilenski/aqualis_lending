@@ -6,7 +6,7 @@ import {DataTypes} from "../../../core-v3/contracts/protocol/libraries/types/Dat
 
 /**
  * @title DataTypesHelper
- * @author Aave
+ * @author Aqualis
  * @dev Helper library to track user current debt balance, used by WrappedTokenGatewayV3
  */
 library DataTypesHelper {

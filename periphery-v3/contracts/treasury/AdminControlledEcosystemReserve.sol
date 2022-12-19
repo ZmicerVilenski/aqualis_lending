@@ -68,7 +68,7 @@ abstract contract AdminControlledEcosystemReserve is
         }
     }
 
-    /// @dev needed in order to receive ETH from the Aave v1 ecosystem reserve
+    /// @dev needed in order to receive ETH from the Aqualis v1 ecosystem reserve
     receive() external payable {}
 
     function _setFundsAdmin(address admin) internal {

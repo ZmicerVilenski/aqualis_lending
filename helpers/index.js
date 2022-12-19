@@ -27,14 +27,14 @@ __exportStar(require("./utilities/fork"), exports);
 __exportStar(require("./utilities/tx"), exports);
 __exportStar(require("./utilities/utils"), exports);
 __exportStar(require("./utilities/signer"), exports);
-__exportStar(require("../markets/aave/commons"), exports);
-__exportStar(require("../markets/aave/rateStrategies"), exports);
-__exportStar(require("../markets/aave/reservesConfigs"), exports);
+__exportStar(require("../markets/aqualis/commons"), exports);
+__exportStar(require("../markets/aqualis/rateStrategies"), exports);
+__exportStar(require("../markets/aqualis/reservesConfigs"), exports);
 // __exportStar(require("../tasks/market-registry/market-registry-add"), exports);
 __exportStar(require("../tasks/misc/print-deployments"), exports);
 __exportStar(require("../tasks/misc/deploy-UiIncentiveDataProvider"), exports);
 __exportStar(require("../tasks/misc/deploy-UiPoolDataProvider"), exports);
-__exportStar(require("../typechain"), exports);
+// __exportStar(require("../typechain"), exports);
 const hardhat_config_helpers_1 = require("./hardhat-config-helpers");
 /** Hardhat Plugin to export tasks in other projects. */
 const TASK_FOLDERS = ["../tasks/misc", "../tasks/market-registry"];

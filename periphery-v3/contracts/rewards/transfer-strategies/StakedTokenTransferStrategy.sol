@@ -12,7 +12,7 @@ import {IERC20} from "../../../../core-v3/contracts/dependencies/openzeppelin/co
  * @title StakedTokenTransferStrategy
  * @notice Transfer strategy that stakes the rewards into a staking contract and transfers the staking contract token.
  * The underlying token must be transferred to this contract to be able to stake it on demand.
- * @author Aave
+ * @author Aqualis
  **/
 contract StakedTokenTransferStrategy is
     TransferStrategyBase,

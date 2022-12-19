@@ -7,7 +7,7 @@ exports.isIncentivesEnabled = exports.getPrefixByAssetType = exports.isL2PoolSup
 const utils_1 = require("ethers/lib/utils");
 const bluebird_1 = __importDefault(require("bluebird"));
 const types_1 = require("./types");
-const aave_1 = __importDefault(require("../markets/aave"));
+const aqualis_1 = __importDefault(require("../markets/aqualis"));
 const test_1 = __importDefault(require("../markets/test"));
 const harmony_1 = __importDefault(require("../markets/harmony"));
 const avalanche_1 = __importDefault(require("../markets/avalanche"));
@@ -23,7 +23,7 @@ const env_1 = require("./env");
 var ConfigNames;
 (function (ConfigNames) {
     ConfigNames["Commons"] = "Commons";
-    ConfigNames["Aave"] = "Aave";
+    ConfigNames["Aqualis"] = "Aqualis";
     ConfigNames["Test"] = "Test";
     ConfigNames["Harmony"] = "Harmony";
     ConfigNames["Avalanche"] = "Avalanche";
@@ -51,15 +51,15 @@ exports.getRequiredParamPerNetwork = getRequiredParamPerNetwork;
 const getAddressFromConfig = (param, network, key) => {
     const value = (0, exports.getParamPerNetwork)(param, network);
     if (!value || !(0, utils_2.isValidAddress)(value)) {
-        throw Error(`[aave-v3-deploy] Input parameter ${key ? `"${key}"` : ""} is missing or is not an address.`);
+        throw Error(`[aqualis-v3-deploy] Input parameter ${key ? `"${key}"` : ""} is missing or is not an address.`);
     }
     return value;
 };
 exports.getAddressFromConfig = getAddressFromConfig;
 const loadPoolConfig = (configName) => {
     switch (configName) {
-        case ConfigNames.Aave:
-            return aave_1.default;
+        case ConfigNames.Aqualis:
+            return aqualis_1.default;
         case ConfigNames.Test:
             return test_1.default;
         case ConfigNames.Harmony:
