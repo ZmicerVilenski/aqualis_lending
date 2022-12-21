@@ -67,5 +67,5 @@
 | helpers/              | Utility helpers to manage configs and deployments                                                                               |
 
 ## Problems in Goerly network:
-
+s
 .\deploy\01_periphery_pre\01_treasury.js - srt 29 - contract AqualisEcosystemReserveV2 ("Treasury-Implementation") {contract creation code storage out of gas} (https://goerli.etherscan.io/tx/0x39dceaad8250a882f1b2ba00eced47ff185a77c4513b2d820f469627e4e631b4)
