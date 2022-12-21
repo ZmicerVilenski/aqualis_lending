@@ -61,7 +61,7 @@ exports.default = {
         [types_1.eOptimismNetwork.main]: (0, hardhat_config_helpers_1.getCommonNetworkConfig)(types_1.eOptimismNetwork.main, 10),
         [types_1.eEthereumNetwork.görli]: (0, hardhat_config_helpers_1.getCommonNetworkConfig)(types_1.eEthereumNetwork.görli, 5),
         [types_1.eArbitrumNetwork.görliNitro]: (0, hardhat_config_helpers_1.getCommonNetworkConfig)(types_1.eArbitrumNetwork.görliNitro, 421613),
-    },
+    }, 
     namedAccounts: {
         ...constants_1.DEFAULT_NAMED_ACCOUNTS,
     },

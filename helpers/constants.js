@@ -99,28 +99,28 @@ exports.DEFAULT_NAMED_ACCOUNTS = {
         default: 0,
     },
     aclAdmin: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     emergencyAdmin: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     poolAdmin: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     addressesProviderRegistryOwner: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     treasuryProxyAdmin: {
-        default: 1,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     incentivesProxyAdmin: {
-        default: 1,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     incentivesEmissionManager: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
     incentivesRewardsVault: {
-        default: 0,
+        default: "0x577b08fae2f7fedd5bfede95e02445ed56d02e0e",
     },
 };
 exports.GOVERNANCE_BRIDGE_EXECUTOR = {

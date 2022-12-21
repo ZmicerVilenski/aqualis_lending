@@ -10,8 +10,8 @@ const types_1 = require("./types");
 require("dotenv").config();
 exports.DEFAULT_BLOCK_GAS_LIMIT = 12450000;
 exports.DEFAULT_GAS_PRICE = 8000000000;
-exports.INFURA_KEY = process.env.INFURA_KEY || "0cb33873ef674922b0299bebbd36d72a";
-exports.ALCHEMY_KEY = process.env.ALCHEMY_KEY || "ZHLS80bOKCG4MUukE9Dc5aU8hW8FrIVo";
+exports.INFURA_KEY = process.env.INFURA_KEY || "";
+exports.ALCHEMY_KEY = process.env.ALCHEMY_KEY || "";
 exports.TENDERLY_FORK_ID = process.env.TENDERLY_FORK_ID || "";
 exports.FORK = (process.env.FORK || "");
 exports.FORK_BLOCK_NUMBER = process.env.FORK_BLOCK_NUMBER
@@ -62,7 +62,8 @@ exports.NETWORKS_RPC_URL = {
     [types_1.eOptimismNetwork.testnet]: `https://opt-goerli.g.alchemy.com/v2/demo`,
     [types_1.eOptimismNetwork.main]: `https://mainnet.optimism.io`,
     tenderly: `https://rpc.tenderly.co/fork/${exports.TENDERLY_FORK_ID}`,
-    [types_1.eEthereumNetwork.görli]: `https://eth-goerli.alchemyapi.io/v2/${(0, exports.getAlchemyKey)(types_1.eEthereumNetwork.görli)}`,
+    // [types_1.eEthereumNetwork.görli]: `https://eth-goerli.alchemyapi.io/v2/${(0, exports.getAlchemyKey)(types_1.eEthereumNetwork.görli)}`,
+    [types_1.eEthereumNetwork.görli]: `https://rpc.ankr.com/eth_goerli`,
     [types_1.eArbitrumNetwork.görliNitro]: `https://goerli-rollup.arbitrum.io/rpc`,
 };
 exports.LIVE_NETWORKS = {
